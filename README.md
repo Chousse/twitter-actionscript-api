@@ -1,5 +1,7 @@
 #Twitter API library for Flex/AIR/ActionScript 3.0
 
+(Updated for Twitter API 1.1)
+
 ActionScript 3.0 library for [Twitter](http://twitter.com/) [API](http://apiwiki.twitter.com/). For use in Adobe Flash, Adobe Flex, Adobe AIR.
 
 oAuth connector is implemented using [ActionScript 3.0 library for oAuth](http://code.google.com/p/oauth-as3/).
