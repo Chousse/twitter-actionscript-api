@@ -45,5 +45,11 @@ package com.dborisenko.api.twitter.oauth.events
 			this.data = data;
 		}
 		
+		override public function clone():Event
+		{
+			var event:OAuthTwitterEvent = new OAuthTwitterEvent(this.type,this.data,this.bubbles,this.cancelable);
+			return event;
+		}
+		
 	}
 }

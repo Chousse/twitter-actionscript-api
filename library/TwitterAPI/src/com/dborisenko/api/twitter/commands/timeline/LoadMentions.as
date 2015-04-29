@@ -21,7 +21,7 @@ package com.dborisenko.api.twitter.commands.timeline
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/statuses/mentions.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/statuses/mentions.json";
 		
 		/**
 		 * 

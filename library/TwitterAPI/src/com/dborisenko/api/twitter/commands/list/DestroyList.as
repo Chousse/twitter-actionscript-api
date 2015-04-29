@@ -21,7 +21,7 @@ package com.dborisenko.api.twitter.commands.list
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/lists/destroy.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/lists/destroy.json";
 		
 		/**
 		 * Requires either a listId or a slug. If using the slug, you must pass either the ownerId or the ownerScreenName as well.

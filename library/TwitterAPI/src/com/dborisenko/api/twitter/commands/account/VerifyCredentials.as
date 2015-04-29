@@ -28,7 +28,7 @@ package com.dborisenko.api.twitter.commands.account
 		 * @param skipStatus        Optional. Whether or not to skip the status in the user response.
 		 * 
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/account/verify_credentials.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/account/verify_credentials.json";
 		
 		public function VerifyCredentials(entities:Boolean = true, skipStatus:Boolean = false)
 		{

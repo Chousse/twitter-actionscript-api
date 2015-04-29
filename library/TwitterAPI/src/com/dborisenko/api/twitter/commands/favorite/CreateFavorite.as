@@ -22,7 +22,7 @@ package com.dborisenko.api.twitter.commands.favorite
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/favorites/create/{id}.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/favorites/create/{id}.json";
 		
 		/**
 		 * 

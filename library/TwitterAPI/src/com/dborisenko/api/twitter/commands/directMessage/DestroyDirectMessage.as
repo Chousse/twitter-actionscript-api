@@ -22,7 +22,7 @@ package com.dborisenko.api.twitter.commands.directMessage
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/direct_messages/destroy/{id}.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/direct_messages/destroy/{id}.json";
 		
 		/**
 		 *  

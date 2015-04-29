@@ -54,10 +54,10 @@ package com.dborisenko.api.twitter.net
         {
 			var json:Object = getJSON();
         	searchData = new TwitterSearch();
-        	if ("results" in json)
+        	if ("statuses" in json)
         	{
         		var res:ArrayCollection = new ArrayCollection();
-        		var array:Array = json["results"] as Array;
+        		var array:Array = json["statuses"] as Array;
         		for each (var item:Object in array)
         		{
         			var status:TwitterStatus = new TwitterStatus(item, null, false, true); //last param is if it is a search.

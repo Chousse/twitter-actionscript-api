@@ -21,7 +21,7 @@ package com.dborisenko.api.twitter.commands.listSubscribers
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/lists/subscribers/create.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/lists/subscribers/create.json";
 		
 		/**
 		 * Either a listId or a slug is required. If providing a slug, an ownerScreenName or ownerId is also required.

@@ -25,7 +25,7 @@ package com.dborisenko.api.twitter.commands.search
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://search.twitter.com/search.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/search/tweets.json";
 		
 		/**
 		 * 
@@ -64,7 +64,8 @@ package com.dborisenko.api.twitter.commands.search
 		 * @param entities     Optional. When true includes an array of entities in the tweet.
 		 *                     Example: true
 		 * 
-		 * https://dev.twitter.com/docs/api/1/get/search
+		 * https://dev.twitter.com/docs/api/1.1/get/search/tweets
+		 * 
 		 * 
 		 */
 		public function Search(q:String, callback:String = null, lang:String = null, rpp:int = -1, page:int = -1, sinceId:String = null, maxId:String = null,
@@ -73,9 +74,9 @@ package com.dborisenko.api.twitter.commands.search
 			super(URL);
 			resultFormat = ResultFormat.JSON;
 			method = METHOD_GET;
-			_requiresAuthentication = false;
+			_requiresAuthentication = true;
 			_apiRateLimited = true;
-			parameters = {q: q, lang: lang, rpp: rpp, page: page, since_id: sinceId, max_id:maxId, result_type:resultType,
+			parameters = {q: q, lang: lang, count: rpp, since_id: sinceId, max_id:maxId, result_type:resultType,
 				geocode: geocode, show_user: showUser, include_entities:entities}
 		}
 	}

@@ -25,7 +25,7 @@ package com.dborisenko.api.twitter.commands.friendship
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/friendships/create.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/friendships/create.json";
 		
 		/**
 		 * One of the user_id or screen_name is required

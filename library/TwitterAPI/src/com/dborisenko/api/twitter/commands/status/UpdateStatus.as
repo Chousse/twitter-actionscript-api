@@ -26,8 +26,7 @@ package com.dborisenko.api.twitter.commands.status
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://twitter.com/statuses/update.json";
-		
+		protected static const URL:String = "https://api.twitter.com/1.1/statuses/update.json";
 		/**
 		 * 
 		 * @param statusText			Required.  The text of your status update. URL encode as necessary. 
@@ -42,7 +41,7 @@ package com.dborisenko.api.twitter.commands.status
 		 * see: https://dev.twitter.com/docs/api/1/post/statuses/update
 		 * 
 		 */
-		public function UpdateStatus(statusText:String, inReplyToStatusId:String = null, entities:Boolean = true)
+		public function UpdateStatus(statusText:String, inReplyToStatusId:String = null, entities:Boolean = true,lat:String=null,long:String=null)
 		{
 			resultFormat = ResultFormat.JSON;
 			super(URL);
@@ -54,7 +53,14 @@ package com.dborisenko.api.twitter.commands.status
 			statusText = statusText.replace(/\n/g, " ");
 			statusText = statusText.replace(/\r/g, " ");
 			
-			parameters = {status: statusText, in_reply_to_status_id: inReplyToStatusId, include_entities:entities};
+			if(lat == null || long == null)
+			{
+				parameters = {status: statusText, in_reply_to_status_id: inReplyToStatusId, include_entities:entities};
+			}
+			else
+			{
+				parameters = {status: statusText, in_reply_to_status_id: inReplyToStatusId, include_entities:entities, lat:lat, long:long, display_coordinates:true};
+			}
 		}
 	}
 }

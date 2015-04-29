@@ -21,7 +21,7 @@ package com.dborisenko.api.twitter.commands.block
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/blocks/blocking.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/blocks/blocking.json";
 		
 		/**
 		 * 

@@ -25,7 +25,7 @@ package com.dborisenko.api.twitter.commands.timeline
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/statuses/home_timeline.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/statuses/home_timeline.json";
 		
 		/**
 		 * 

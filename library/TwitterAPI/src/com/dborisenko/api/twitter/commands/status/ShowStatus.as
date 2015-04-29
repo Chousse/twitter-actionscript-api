@@ -21,7 +21,7 @@ package com.dborisenko.api.twitter.commands.status
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/statuses/show/{id}.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/statuses/show/{id}.json";
 		
 		/**
 		 * 

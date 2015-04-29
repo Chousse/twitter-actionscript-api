@@ -24,7 +24,7 @@ package com.dborisenko.api.twitter.commands.user
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/friends/ids.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/friends/ids.json";
 		
 		/**
 		 * You must provide either a userId or a screenName.

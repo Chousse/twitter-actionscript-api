@@ -25,7 +25,7 @@ package com.dborisenko.api.twitter.commands.user
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/users/search.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/users/search.json";
 		
 		/**
 		 * 

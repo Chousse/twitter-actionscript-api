@@ -24,7 +24,7 @@ package com.dborisenko.api.twitter.commands.listMembers
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/lists/members/create.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/lists/members/create.json";
 		
 		/**
 		 * Either userId or userScreen name is required.

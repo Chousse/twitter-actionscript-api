@@ -50,7 +50,7 @@ package com.dborisenko.api.twitter.oauth
 	public class OAuthTwitterConnection extends EventDispatcher
 	{
 		private static const REQUEST_TOKEN_URL:String = "https://twitter.com/oauth/request_token";
-		private static const ACCESS_TOKEN_URL:String = "https://twitter.com/oauth/access_token";
+		private static const ACCESS_TOKEN_URL:String = "https://twitter.com/oauth/access_token"; 
 		private static const AUTHORIZE_URL:String = "https://twitter.com/oauth/authorize";
 		
 		/**

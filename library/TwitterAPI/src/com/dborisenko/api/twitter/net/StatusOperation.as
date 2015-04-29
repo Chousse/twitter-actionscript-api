@@ -48,7 +48,13 @@ package com.dborisenko.api.twitter.net
 		override protected function handleResult(event:Event) : void
         {
 			var json:Object = getJSON();
-			status = new TwitterStatus(json);
+			try{
+				status = new TwitterStatus(json);
+			}
+			catch(e:Error)
+			{
+				trace("Error parsing Twitter Status object" +  e.message);
+			}
         	super.handleResult(event);
         }
 	}

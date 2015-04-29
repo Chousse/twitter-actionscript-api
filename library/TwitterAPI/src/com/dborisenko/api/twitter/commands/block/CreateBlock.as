@@ -25,7 +25,7 @@ package com.dborisenko.api.twitter.commands.block
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/blocks/create.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/blocks/create.json";
 		
 		/**
 		 * One of the following parameters is required

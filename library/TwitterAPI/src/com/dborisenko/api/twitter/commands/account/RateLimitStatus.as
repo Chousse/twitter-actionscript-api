@@ -31,7 +31,7 @@ package com.dborisenko.api.twitter.commands.account
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/account/rate_limit_status.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/account/rate_limit_status.json";
 		
 		public function RateLimitStatus()
 		{

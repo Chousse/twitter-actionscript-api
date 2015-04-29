@@ -24,7 +24,7 @@ package com.dborisenko.api.twitter.commands.list
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "https://api.twitter.com/1/lists/memberships.json";
+		protected static const URL:String = "https://api.twitter.com/1.1/lists/memberships.json";
 		
 		/**
 		 * 

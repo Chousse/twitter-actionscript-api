@@ -23,7 +23,7 @@ package com.dborisenko.api.twitter.commands.friendship
 		/**
 		 * @private
 		 */
-		protected static const URL:String = "http://api.twitter.com/1/friendships/destroy.json";
+		protected static const URL:String = "http://api.twitter.com/1.1/friendships/destroy.json";
 		
 		/**
 		 * One of userId or screenName is required:
